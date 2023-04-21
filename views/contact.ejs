@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="./styles/contact.css">
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap" rel="stylesheet">
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/017f1c0c45.js" crossorigin="anonymous"></script>
+    <!--Scripts-->
+    <script src="./scripts/hamburger.js" defer></script>
+    <script src="/scripts/map.js" defer></script>
+     <!--Leaflet Map-->
+     <!--Leaflet Map CSS-->
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+      <!--Leaflet Map Scripts-->
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+    
+    <title>Thermexa | Contact Page</title>
+</head>
+<body>
+    <main>
+    <div class="container">
+        <header class="header">
+            <nav class="header-nav">
+                <img src="./images/logo.png" class="logo">
+
+                
+                <ul class="navbar-list">
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="/">Acasa</a>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-address-card"></i>
+                        <a href="/about">Despre noi</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="/contact">Contacteaza-ne</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-star"></i>
+                        <a href="/reviews">Review-uri</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-box"></i>
+                        <a href="/products">Produse</a>
+                    </li>
+                    
+                </ul>
+                <div class="hamburger-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+          <div class="flex-content">
+            <section class="left-side">
+              <h1>Cum poti lua legatura cu noi?</h1>
+              <p>Ne poti contacta la numarul de telefon: </p>
+              <p><b>0212 694 080 085</b></p>
+              <p>Sau la adresa noastra de e-mail:</p>
+              <p><b>thermexa@contact.com</b></p>
+
+              <h2>De asemenea ne poti gasi si intr-unul din orasele urmatoare:</h2>
+              <div class="center">
+              <ul>
+                <li>Pitesti - sediul principal, la Strada Depozitelor, Nr. 13</li>
+                <li>Focsani - Strada Cezar Bolliac, Nr. 20</li>
+                <li>Bacau - Strada Dumbravei, Nr. 6</li>
+                <li>Constanta - Strada Mircea cel Batran, Nr. 196</li>
+                <li>Cluj-Napoca - Strada Decebal, Nr. 16 </li>
+                <li>Baia Mare - Bulevardul Republicii, Nr. 10</li>
+              </ul>
+
+              <div id="map"></div>
+            </div>
+            </section>
+
+            <section class="right-side">
+              <div class="form-card">
+                <h1>Adreseaza-ne o intrebare</h1>
+                <form method="POST">
+                    <label for="contact-name">Numele tau</label>
+                    <input type="text" name="contact-name">
+
+                    <label for="contact-name">Email-ul tau</label>
+                    <input type="text" name="contact-email">
+
+                    <label for="contact-name">Intrebarea ta</label>
+                    <textarea name="contact-question" cols="50" rows="15"></textarea>
+                    <button type="submit" class="button">Sumbit</button>
+                </form>
+              </div>
+            </section>
+          </div>  
+          
+        </div>
+        <footer>
+            <nav class="footer-nav">
+                <h1>Link-uri Importante</h1>
+            <ul class="footer-navbar-list">
+                <li>
+                    <a href="/">Acasa</a>
+                </li>
+                <li>
+
+                    <a href="/about">Despre noi</a>
+                </li>
+                <li>
+                    <a href="/contact">Contacteaza-ne</a>
+                </li>
+                <li>
+                    <a href="/reviews">Review-uri</a>
+                </li>
+                <li>
+                    <a href="/products">Produse</a>
+                </li>
+                <li>
+                    <a href="">FAQ</a>
+                </li>
+            </nav>
+                <nav class="footer-nav-inline">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                    <p>Thermexa 2023 Copyright &copy</p>
+                    <h4 class="love-message">Made with &#x2764; by Ciurea Roberto Ionut from CNZG</h4>
+                </nav> 
+                
+                <div class="newsletter">
+                    <img src="./images/logo.png" class="logo">
+                    <h1>Aboneza-te la newsletter</h1>
+                    <form action="/" method="POST">
+                    <input type="text" name="email" class="newsletter-input">
+                    <button class="newsletter-btn" type="submit">Submit</button>
+                </form>
+                </div>
+
+        </footer>
+    </div>
+</main>
+
+</body>
+</html>

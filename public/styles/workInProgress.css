@@ -1,0 +1,55 @@
+/*CSS reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/*Custom variables*/
+:root {
+  --bg-600: hsl(35, 22%, 10%);
+  --ac-300: hsl(31, 91%, 53%);
+  --ac-300-hover: hsl(31, 91%, 45%);
+  --ac-100: hsl(0, 3%, 93.5%);
+  --ac--000: hsl(0, 0%, 91%);
+  --white: hsl(0, 0%, 100%);
+  --main-ff: "Exo", sans-serif;
+  --ac-400: hsl(51, 100%, 50%);
+  --ac-200: hsl(0, 0%, 80%);
+}
+
+/*Global styles*/
+.container {
+  width: 100%;
+  min-width: 50%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container p {
+  font-family: var(--main-ff);
+  font-size: 1.5rem;
+  margin: 1rem 2rem;
+  font-weight: 600;
+}
+
+.container a {
+  text-decoration: none;
+  color: var(--white);
+  padding: 1rem;
+  background-color: var(--ac-300);
+  border-radius: 15px;
+}
+
+.container a:hover {
+  background-color: var(--ac-300-hover);
+  transition: ease-in-out 0.2s;
+}

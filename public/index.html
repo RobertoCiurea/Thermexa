@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap" rel="stylesheet">
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/017f1c0c45.js" crossorigin="anonymous"></script>
+    <!--Scripts-->
+    <script src="./scripts/hamburger.js" defer></script>
+    <script src="./scripts/rating.js" defer></script>
+    <title>Thermexa | Home Page</title>
+</head>
+<body>
+    <main>
+    <div class="container">
+        <header class="header">
+            <nav class="header-nav">
+                <img src="./images/logo.png" class="logo">
+
+                
+                <ul class="navbar-list">
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="/">Acasa</a>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-address-card"></i>
+                        <a href="/about">Despre noi</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="/contact">Contacteaza-ne</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-star"></i>
+                        <a href="/reviews">Review-uri</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-box"></i>
+                        <a href="/products">Produse</a>
+                    </li>
+                    
+                </ul>
+                <div class="hamburger-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+
+            <div class="blur-over">
+
+            </div>
+            <ul class="keywords-list">
+                <li><p>Eficienta</p></li>
+                <li><p>Confort</p></li>
+                <li><p>Siguranta</p></li>
+
+            </ul>
+        </header>
+        
+        <div class="content">
+            <div class="flex">
+                <img src="./images/photo-7.jpeg" class="photo-galery photo-2">
+                <div class="text-box">
+
+                    <h1>Energie regenerabila </h1>
+                    <p>Sisteme moderne si eficiente de alimentare a locuintelor cu energie sustenabila si regenerabila</p>
+                </div>
+            </div>
+            <div class="flex dark-background">
+                <div class="text-box">
+                    <h1>Eficienta, putere si confort la dimensiuni reduse</h1>
+                    <p>Sisteme de incalzire eficiente, clasice, compacte, cu putere de pana la 45 Kw</p>
+                </div>
+                <img src="./images/photo-5.jpeg" class="photo-galery photo-2">
+            </div>
+            <div class="flex">
+                <img src="./images/photo-2.jpeg" class="photo-galery photo-3">
+                <div class="text-box">
+                    <h1>Garantie extensibila la fiecare dintre produsele noastre</h1>
+                    <p>Fiecare produs cumparat de la noi beneficiaza de o garantie de minim 5 ani care poate fi extinsa pana la chiar 7 ani</p>
+                </div>
+            </div>
+            <div class="flex dark-background">
+                <div class="text-box">
+                    <h1>Bucuria de a alege fix ceea ce iti doresti</h1>
+                    <p>Profita de o gama larga de produse si accesori si alege un produs care este pe baza asteptarilor tale din stocurile noastre.</p>
+                </div>
+                <img src="./images/photo-1.jpeg" class="photo-galery photo-4">
+            </div>
+
+            <div class="card">
+                <h1>De ce sa alegi Thermexa?</h1>
+                <ul>
+                    <li><p>Posibilitatea unei game mai variate de produse</p></li>
+                    <li><p>Posibilitatea unei game mai variate de produse</p></li>
+                    <li><p>Montajul, dar si intretinerea este realizata de profesionisti (de catre intreprindere)</p></li>
+                    <li><p>Preturile sunt mai reduse decat ale competitiei, fara a compromite siguranta consumatorului sau a scadea calitatea produsului</p></li>
+                    <li><p>Posibilitatea unei garantii extinse este prezenta in optiunile Thermexa</p></li>
+            
+                </ul>
+
+            </div>
+            <section class="review-section">
+            <h1>Adauga un review</h1>
+            <form action="/reviews" method="POST">
+                <label for="name">Nume:</label>
+                    <input type="text" name="name" required class="name-field">
+              <br>
+                <label for="rating">Rating:</label>
+                <div class="rating">
+                    <span class="star" data-rating="1"></span>
+                    <span class="star" data-rating="2"></span>
+                    <span class="star" data-rating="3"></span>
+                    <span class="star" data-rating="4"></span>
+                    <span class="star" data-rating="5"></span>
+                </div>
+                <input type="number" name="rating" value="0" min="0" max="5" required class="rating-field" id="rating">
+              <br>
+                 <label for="comment">Mesaj:</label>
+                    <textarea name="comment" required class="comment-field"></textarea>
+              <br>
+              <button type="submit" class="button">Sumbit</button>
+            </form>
+        </section>
+        </div>
+        <footer>
+            <nav class="footer-nav">
+                <h1>Link-uri Importante</h1>
+            <ul class="footer-navbar-list">
+                <li>
+                    <a href="/">Acasa</a>
+                </li>
+                <li>
+
+                    <a href="/about">Despre noi</a>
+                </li>
+                <li>
+                    <a href="/contact">Contacteaza-ne</a>
+                </li>
+                <li>
+                    <a href="/reviews">Review-uri</a>
+                </li>
+                <li>
+                    <a href="/products">Produse</a>
+                </li>
+                
+
+                <li>
+                    <a href="">FAQ</a>
+                </li>
+            </nav>
+                <nav class="footer-nav-inline">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                    <p>Thermexa 2023 Copyright &copy</p>
+                    <h4 class="love-message">Made with &#x2764; by Ciurea Roberto Ionut from CNZG</h4>
+                </nav> 
+                
+                <div class="newsletter">
+                    <img src="images/logo.png" class="logo">
+                    <h1>Aboneza-te la newsletter</h1>
+                    <form action="/" method="POST">
+                    <input type="text" name="email" class="newsletter-input">
+                    <button class="newsletter-btn" type="submit">Submit</button>
+                </form>
+                </div>
+
+        </footer>
+    </div>
+</main>
+</body>
+</html>
