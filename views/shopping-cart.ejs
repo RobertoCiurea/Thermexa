@@ -19,6 +19,7 @@
     <!--Scripts-->
     <script src="./scripts/hamburger.js" defer></script>
     <script src="./scripts/productsTotals.js" defer></script>
+    
    
     
     <title>Thermexa | Shopping Cart Page</title>
@@ -62,13 +63,25 @@
             </nav>
         </header>
         <div class="content">
-          
+          <% if(products.length == 0){ %>
+           <h1> Nu ai produse in cos.</h1>
+                <p>Poti adauga produse prin apasarea butonului 'Adauga in cos' din dreptul fiecarui produs dorit.</p>
+            <% }else{ %>
+
             <h1>Cosul tau de cumparaturi</h1>
-    
+            
         <% products.forEach(product =>{ %>
             <div class="card" id="card-element">
-            <h1>Produs: <%= product.description %></h1>
+            <h1>Produs: <span id="description"><%= product.description %></span></h1>
             <h1>Pret: <span id="price"><%= product.price %></span> RON</h1>
+
+            <form method="POST" action="shopping-cart/delete">
+
+                <input type="hidden" name="itemId" value="<%= product.id %>">
+                <button type="submit">
+                <i class="fa-solid fa-x close-btn" id="x-button"></i>
+            </button>
+            </form>
         </div>
         <% }) %>
         <div class="total-card">
@@ -77,6 +90,7 @@
         </div>
                 <button class="finish-btn" id="button">Finalizeaza comanda</button>
         
+                <% } %>
         </div>
         <footer>
             <nav class="footer-nav">
