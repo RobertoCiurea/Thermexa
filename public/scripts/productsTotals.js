@@ -29,6 +29,6 @@ totalProductsElements.textContent = totalProducts;
 //toggle button by total
 const button = document.getElementById("button");
 
-if (totalProducts >= 1) {
-  button.classList.toggle("active");
-}
+//send total to node server
+const getInput = document.getElementById("input");
+getInput.value = totalPrice;
