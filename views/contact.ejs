@@ -82,7 +82,7 @@
               <div class="center">
               <ul>
                 <li>Pitesti - sediul principal, la Strada Depozitelor, Nr. 13</li>
-                <li>Focsani - Strada Cezar Bolliac, Nr. 20</li>
+                <li>Bucuresti, sectorul 6 - Strada Stirbei Voda, Nr. 47</li>
                 <li>Bacau - Strada Dumbravei, Nr. 6</li>
                 <li>Constanta - Strada Mircea cel Batran, Nr. 196</li>
                 <li>Cluj-Napoca - Strada Decebal, Nr. 16 </li>
@@ -96,15 +96,15 @@
             <section class="right-side">
               <div class="form-card">
                 <h1>Adreseaza-ne o intrebare</h1>
-                <form method="POST">
-                    <label for="contact-name">Numele tau</label>
-                    <input type="text" name="contact-name">
+                <form method="POST" action="/contact">
+                    <label for="name">Numele tau</label>
+                    <input type="text" name="name">
 
-                    <label for="contact-name">Email-ul tau</label>
-                    <input type="text" name="contact-email">
+                    <label for="name">Email-ul tau</label>
+                    <input type="email" name="email">
 
-                    <label for="contact-name">Intrebarea ta</label>
-                    <textarea name="contact-question" cols="50" rows="15"></textarea>
+                    <label for="name">Intrebarea ta</label>
+                    <textarea name="question" cols="50" rows="15"></textarea>
                     <button type="submit" class="button">Sumbit</button>
                 </form>
               </div>
