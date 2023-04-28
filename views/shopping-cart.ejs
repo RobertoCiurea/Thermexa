@@ -17,8 +17,8 @@
     <!--Font awesome-->
     <script src="https://kit.fontawesome.com/017f1c0c45.js" crossorigin="anonymous"></script>
     <!--Scripts-->
-    <script src="./scripts/hamburger.js" defer></script>
-    <script src="./scripts/productsTotals.js" defer></script>
+    <script src="/scripts/hamburger.js" defer></script>
+    <script src="/scripts/productsTotals.js" defer></script>
     
    
     
@@ -29,7 +29,7 @@
     <div class="container">
         <header class="header">
             <nav class="header-nav">
-                <img src="./images/logo.png" class="logo">
+                <img src="/images/logo.png" class="logo">
 
                 
                 <ul class="navbar-list">
@@ -88,9 +88,15 @@
             <h2>Total produse: <span id="total-products-elements"></span></h2>
             <h2>Subtotal: <span id="total-prices-elements"></span> RON</h2>
         </div>
-                <button class="finish-btn" id="button">Finalizeaza comanda</button>
+                <form method="POST" action="shopping-cart/order">
+
+                    <input type="hidden" name="total" id="input" value="">
+
+                <button class="finish-btn" id="button" type="submit">Finalizeaza comanda</button>
+            </form>
         
                 <% } %>
+                <a href="/products" class="back-link"><i class="fa-solid fa-arrow-left"></i> Inapoi la pagina "Produse"</a>
         </div>
         <footer>
             <nav class="footer-nav">
@@ -136,7 +142,7 @@
                 </nav> 
                 
                 <div class="newsletter">
-                    <img src="images/logo.png" class="logo">
+                    <img src="/images/logo.png" class="logo">
                     <h1>Aboneza-te la newsletter</h1>
                     <form action="/" method="POST">
                     <input type="text" name="email" class="newsletter-input">

@@ -2,16 +2,19 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+//routers
 const reviewRouter = require("./routes/reviews");
 const productRouter = require("./routes/productData");
-const review = require("./schema/review");
+const contactRouter = require("./routes/questions");
 require("dotenv").config();
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+//use routers
 app.use("/reviews", reviewRouter);
-app.use("/", productRouter);
+app.use("/shopping-cart", productRouter);
+app.use("/contact", contactRouter);
 
 //database
 
