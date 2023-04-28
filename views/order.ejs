@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="/styles/order.css">
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap" rel="stylesheet">
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/017f1c0c45.js" crossorigin="anonymous"></script>
+    <!--Scripts-->
+    <script src="/scripts/hamburger.js" defer></script>
+    <script src="/scripts/order.js" defer></script>
+    
+   
+    
+    <title>Thermexa | Shopping Cart Page</title>
+</head>
+<body>
+    <main>
+    <div class="container">
+        <header class="header">
+            <nav class="header-nav">
+                <img src="/images/logo.png" class="logo">
+
+                
+                <ul class="navbar-list">
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="/">Acasa</a>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-address-card"></i>
+                        <a href="/about">Despre noi</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="/contact">Contacteaza-ne</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-star"></i>
+                        <a href="/reviews">Review-uri</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-box"></i>
+                        <a href="/products">Produse</a>
+                    </li>
+                    
+                </ul>
+                <div class="hamburger-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="center">
+          <h1>Finalizeaza comanda</h1>
+          <form method="POST" action="/shopping-cart/finish-order">
+            <label for="name">Numele tau: </label>
+            <input type="text" name="name" placeholder="Introdu numele tau complet" required>
+
+            <label for="phone">Numarul tau de telefon: </label>
+            <input type="text" name="phone" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="10" placeholder="Introdu numarul tau de telefon" required/>
+
+            <label for="name">Email-ul tau: </label>
+            <input type="email" name="email" placeholder="Introdu email-ul tau" required>
+
+            <label for="name">Adresa ta: </label>
+            <input type="adress" name="adress" placeholder="Introdu adresa livrarii" required>
+
+            <label for="name">Note suplimentare: </label>
+            <input type="text" name="optional" placeholder="Introdu note suplimentare (optional)">
+
+            <input type="hidden" id="order-full-price" name="orderFullPrice" value="">
+            <h1>Subtotal comanda: <span id="order-price"><%= total %></span> RON</h1>
+            <h1 class="under-line">Taxa de transport: <span>100</span> RON</h1>
+            <h1>Total comanda: <span id="full-price"></span> RON</h1>
+            <button class="submit-btn">Trimite comanda</button>
+          </form>
+
+        </div>
+        <div class="notes">
+            <p>!Note: Plata comenzii se realizeaza la ramburs</p>
+            <p>Fiecare comanda va fi confirmata telefonic la cateva minute de la trimiterea ei</p>
+            <p>Pretul montarii (in cazul in care se opteaza pentru montare) se discuta in momentul confirmarii telefonice si se calculeaza in functie de suprafata casei si numarul de calorifere dorite</p>
+        </div>
+        </div>
+        <footer>
+            <nav class="footer-nav">
+                <h1>Link-uri Importante</h1>
+            <ul class="footer-navbar-list">
+                <li>
+                    <a href="/">Acasa</a>
+                </li>
+                <li>
+
+                    <a href="/about">Despre noi</a>
+                </li>
+                <li>
+                    <a href="/contact">Contacteaza-ne</a>
+                </li>
+                <li>
+                    <a href="/reviews">Review-uri</a>
+                </li>
+                <li>
+                    <a href="/products">Produse</a>
+                </li>
+                <li>
+                    <a href="">FAQ</a>
+                </li>
+            </nav>
+                <nav class="footer-nav-inline">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                    <p>Thermexa 2023 Copyright &copy</p>
+                    <h4 class="love-message">Made with &#x2764; by Ciurea Roberto Ionut from CNZG</h4>
+                </nav> 
+                
+                <div class="newsletter">
+                    <img src="/images/logo.png" class="logo">
+                    <h1>Aboneza-te la newsletter</h1>
+                    <form action="/" method="POST">
+                    <input type="text" name="email" class="newsletter-input">
+                    <button class="newsletter-btn" type="submit">Submit</button>
+                </form>
+                </div>
+
+        </footer>
+    </div>
+</main>
+</body>
+</html>
