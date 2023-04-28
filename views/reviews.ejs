@@ -68,6 +68,9 @@
       <main>
         <div class="content">
           <h1 class="review-title">Review-uri</h1>
+          <% if(reviews.length ==0){ %>
+            <h1>Momentan nu exista reviewuri! &#9785; </h1>
+            <% }else{ %>
           <% reviews.forEach(review => { %>
           <section class="review-card">
             <ul>
@@ -92,6 +95,7 @@
             </ul>
           </section>
           <% }); %>
+          <%}%>
         </div>
       
       <footer>
