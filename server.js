@@ -58,6 +58,10 @@ app.get("/centrale-pe-peleti", (req, res) => {
 app.get("/centrale-pe-gaz", (req, res) => {
   res.render("./product-items/centrale-gaz");
 });
+app.get("/centrale-electrice", (req, res) => {
+  res.render("./product-items/centrale-electrice");
+});
+
 app.get("/boilere", (req, res) => {
   res.render("./product-items/boilere");
 });
@@ -66,6 +70,13 @@ app.get("/pompe-de-caldura", (req, res) => {
 });
 app.get("/panouri-solare", (req, res) => {
   res.render("./product-items/panouri-solare");
+});
+
+app.get("/calorifere", (req, res) => {
+  res.render("./product-items/calorifere");
+});
+app.get("/accesorii", (req, res) => {
+  res.render("./product-items/accesorii");
 });
 
 //newsletter
