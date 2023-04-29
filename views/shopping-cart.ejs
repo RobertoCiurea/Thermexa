@@ -19,9 +19,11 @@
     <!--Scripts-->
     <script src="./scripts/hamburger.js" defer></script>
     <script src="./scripts/productsTotals.js" defer></script>
+    
    
     
     <title>Thermexa | Shopping Cart Page</title>
+    <link rel="website icon" type="png" href="images//small-logo.png">
 </head>
 <body>
     <main>
@@ -65,6 +67,7 @@
           <% if(products.length == 0){ %>
            <h1> Nu ai produse in cos.</h1>
                 <p>Poti adauga produse prin apasarea butonului 'Adauga in cos' din dreptul fiecarui produs dorit.</p>
+                <p><a  href="./products" class="back-link"><i class="fa-solid fa-arrow-left"></i> Navigheaza inapoi la pagina produse</a> si alege produsul care ti se potriveste!</p>
             <% }else{ %>
 
             <h1>Cosul tau de cumparaturi</h1>
@@ -94,6 +97,7 @@
                 <button class="finish-btn" id="button" type="submit">Finalizeaza comanda</button>
             </form>
         
+                <% } %>
         </div>
         <footer>
             <nav class="footer-nav">
