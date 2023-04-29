@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
-    <link rel="stylesheet" href="/styles/products.css">
+    <link rel="stylesheet" href="../styles/items-list.css">
 
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,13 +14,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <!--Font awesome-->
     <script src="https://kit.fontawesome.com/017f1c0c45.js" crossorigin="anonymous"></script>
     <!--Scripts-->
     <script src="./scripts/hamburger.js" defer></script>
-
+    <script src="/scripts/getData.js" defer></script>
+  
     
     <title>Thermexa | Product Page</title>
+    <link rel="website icon" type="png" href="images//small-logo.png">
 </head>
 <body>
     <main>
@@ -59,10 +64,55 @@
                     <span></span>
                 </div>
             </nav>
+            <div class="bottom-header">
+                <nav>
+                <h1>Centrale pe gaz</h1>
+                <ul>
+                    <li>
+                        <a href="/shopping-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
         </header>
         <div class="content">
-          
-            <h1>Centrale pe gaz</h1>
+          <div class="content-grid">
+            <div class="item">
+                <img src="/images/photo-19.png" class="img">
+                <p id="product-description">Centrala termica, condensare, Viessmann, Vitodens 100-W, incalzire apa calda, kit evacuare inclus, 25kW </p>
+                <h1 ><span id="product-price">5900</span> RON</h1>
+                <button type="submit" id="submit-btn">Adauga in cos <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+
+            <div class="item">
+                <img src="/images/photo-20.png" class="img">
+                <p id="product-description">Centrala termica, condensare, Viessmann, Vitodens 111-F, incalzire acumulator 100L, kit evacuare inclus, 25kW</p>
+                <h1 ><span id="product-price">10200</span> RON</h1>
+                <button type="submit" id="submit-btn">Adauga in cos <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+
+            <div class="item">
+                <img src="/images/photo-21.png" class="img">
+                <p id="product-description">Centrala termica, condensare, Bosch, Condens 2300W, incalzire, apa calda, 25 kW</p>
+                <h1 ><span id="product-price">4500</span> RON</h1>
+                <button type="submit" id="submit-btn">Adauga in cos <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+
+            <div class="item">
+                <img src="/images/photo-22.png" class="img">
+                <p id="product-description">Centrala termica, condensare, Bosch, Condens 5000WT, incalzire, apa calda, boiler 48L, 24 Kw </p>
+                <h1 ><span id="product-price">10500</span> RON</h1>
+                <button type="submit" id="submit-btn">Adauga in cos <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+
+            <div class="item">
+                <img src="/images/photo-23.png" class="img">
+                <p id="product-description">Centrala termica, condensare, Bosch, Condens 5000W, incalzire, 100 kW, fara kit evacuare  </p>
+                <h1 ><span id="product-price">24000</span> RON</h1>
+                <button type="submit" id="submit-btn">Adauga in cos <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+
+          </div>
             
         </div>
         <footer>
@@ -120,6 +170,7 @@
         </footer>
     </div>
 </main>
+
 
 </body>
 </html>

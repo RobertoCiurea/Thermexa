@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
-    <link rel="stylesheet" href="/styles/products.css">
+    <link rel="stylesheet" href="../styles/items-list.css">
 
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,14 +14,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <!--Font awesome-->
     <script src="https://kit.fontawesome.com/017f1c0c45.js" crossorigin="anonymous"></script>
     <!--Scripts-->
     <script src="./scripts/hamburger.js" defer></script>
-
-
+    <script src="/scripts/getData.js" defer></script>
+  
     
     <title>Thermexa | Product Page</title>
+    <link rel="website icon" type="png" href="images//small-logo.png">
 </head>
 <body>
     <main>
@@ -60,10 +64,37 @@
                     <span></span>
                 </div>
             </nav>
+            <div class="bottom-header">
+                <nav>
+                <h1>Centrale pe peleti</h1>
+                <ul>
+                    <li>
+                        <a href="/shopping-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
         </header>
         <div class="content">
-          
-            <h1>Centrale pe peleti</h1>
+          <div class="content-grid">
+        
+
+            <div class="item">
+                <img src="/images/photo-34.png" class="img">
+                <p id="product-description">Centrală termică pe peleți Ferroli BioPellet Pro 24 24kW, complet echipat pentru încălzire, panou digital comandă  </p>
+                <h1 ><span id="product-price">14000</span> RON</h1>
+                <button type="submit" id="submit-btn">Adauga in cos <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+
+            <div class="item">
+                <img src="/images/photo-35.png" class="img">
+                <p id="product-description">Centrală termică pe peleți Ferroli BioPellet Pro 30 30kW, complet echipat pentru încălzire, panou digital comandă </p>
+                <h1 ><span id="product-price">16000</span> RON</h1>
+                <button type="submit" id="submit-btn">Adauga in cos <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+           
+
+          </div>
             
         </div>
         <footer>
@@ -121,6 +152,7 @@
         </footer>
     </div>
 </main>
+
 
 </body>
 </html>
