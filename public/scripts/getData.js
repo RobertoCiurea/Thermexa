@@ -3,7 +3,6 @@ const buttons = document.querySelectorAll("#submit-btn");
 buttons.forEach((button) => {
   //get dom elements for each button
   const parent = button.parentElement;
-  const image = parent.querySelector("#img");
   const productDescription = parent.querySelector("#product-description");
   const productPrice = parent.querySelector("#product-price");
   //get the content from each child element

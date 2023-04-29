@@ -146,7 +146,10 @@ h1 {
 }
 .item:nth-child(4),
 .item:nth-child(5),
-.item:nth-child(6) {
+.item:nth-child(6),
+.item:nth-child(7),
+.item:nth-child(8),
+.item:nth-child(9) {
   margin-top: 5rem;
 }
 
@@ -307,6 +310,9 @@ footer .love-message {
 @media (max-width: 50rem) {
   .content-grid {
     grid-template-columns: auto;
+  }
+  .item:nth-child(2) {
+    margin-top: 5rem;
   }
 }
 
