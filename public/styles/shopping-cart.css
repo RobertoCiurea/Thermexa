@@ -312,14 +312,18 @@ footer .love-message {
     display: flex;
     position: absolute;
     top: 20px;
+    left: 50%;
     font-size: 0.75rem;
-    left: 20rem;
     flex-direction: column;
     transition: ease-in-out 0.1s;
   }
   /*Content-Phone*/
   .content .flex {
     flex-wrap: wrap;
+  }
+  nav .logo {
+    width: 225px;
+    height: 125px;
   }
 
   .footer-nav-inline {
