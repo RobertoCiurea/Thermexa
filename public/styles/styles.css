@@ -190,6 +190,28 @@ h1 {
   background-color: var(--ac-100);
 }
 
+/*Scroll top button styles*/
+.scroll-button {
+  display: none;
+  position: fixed;
+  left: 95%;
+  cursor: pointer;
+  top: 20%;
+  background-color: var(--ac-300);
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  text-align: center;
+  z-index: 1;
+}
+.scroll-button:hover {
+  background-color: var(--ac-300-hover);
+  transition: ease-in-out 0.5s;
+  color: var(--ac-200);
+}
+
 /*Review fields styles*/
 
 section h1 {
@@ -461,8 +483,8 @@ footer .love-message {
     display: flex;
     position: absolute;
     top: 20px;
+    left: 50%;
     font-size: 0.75rem;
-    left: 20rem;
     flex-direction: column;
     transition: ease-in-out 0.2s;
   }
@@ -473,6 +495,14 @@ footer .love-message {
   .content .photo-galery {
     width: 450px;
     height: 300px;
+  }
+  .scroll-button {
+    padding: 0.7rem;
+    left: 93%;
+  }
+  nav .logo {
+    width: 225px;
+    height: 125px;
   }
   .footer-nav-inline {
     margin-top: 2rem;
