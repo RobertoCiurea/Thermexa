@@ -1,43 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--CSS-->
-    <link rel="stylesheet" href="/styles/workInProgress.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/about.css">
     <!--Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap" rel="stylesheet">
     <!--Font awesome-->
-    <script
-      src="https://kit.fontawesome.com/017f1c0c45.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/017f1c0c45.js" crossorigin="anonymous"></script>
     <!--Scripts-->
     <script src="./scripts/hamburger.js" defer></script>
+    <script src="./scripts/scrollTopButton.js" defer></script>
     <script src="./scripts/rating.js" defer></script>
     <title>Thermexa | About Page</title>
-    <link rel="website icon" type="png" href="images//small-logo.png" />
-  </head>
-  <body>
+    <link rel="website icon" type="png" href="images//small-logo.png">
+</head>
+<body>
     <main>
-      <div class="container">
-        <img src="/images/workInProgress.png" class="content-image" />
-        <p>This web page is curently in development!</p>
-        <p>Thank you for your understanding!</p>
-        <a href="/">Take me home</a>
-      </div>
-    </main>
-  </body>
+    <div class="container">
+        <header class="header">
+            <nav class="header-nav">
+                <img src="./images/logo.png" class="logo">
+
+                
+                <ul class="navbar-list">
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="/">Acasa</a>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-address-card"></i>
+                        <a href="/about">Despre noi</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="/contact">Contacteaza-ne</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-star"></i>
+                        <a href="/reviews">Review-uri</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-box"></i>
+                        <a href="/products">Produse</a>
+                    </li>
+                    
+                </ul>
+                <div class="hamburger-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+
+            <div class="blur-over">
+
+            </div>
+    
+        </header>
+        
+        <div class="content">
+          <button class="scroll-button"><i class="fa-solid fa-arrow-up"></i></button>
+            
+          <h1 class="main-title">Despre noi</h1>
+          <div class="flex">
+            <div class="text-box">
+              <p>Thermexa este o companie moderna si nou aparuta pe piata care se ocupa atata de furnizare, cat si de montarea de sisteme de incalzire si surse de energie clasice, dar si innovative.</p>
+            </div>
+          </div>
+
+       
+
+          <div class="flex">
+            <div class="text-box">
+                <h1>Ce va punem la dispozitie?</h1>
+              <p>Compania dispune de o gama larga si variata de <a class="link" href="/products">produse</a> care iti stau la dispozitia nevoilor locuintei tale. Fiecare produs comandat este livrat cu atentie pana la usa clientului si chiar montat de catre o echipa de specialisti (daca se opteaza pentru montare).</p>
+            </div>
+             <img src="/images/Instalator_Thermexa_V1.png " class="photo-galery">
+              
+              
+          </div>
+
+
+          <div class="flex">
+            <div class="text-box">
+                <h1>Cum procedam cu comenzile?</h1>
+            <p>Comenzile plasate sunt procesate imediat, iar livrarea se realizeaza la cateva zile de la procesarea comenzii multumita curierilor nostri si echipei noastre de logistica.</p>
+            <p>Fiecare comanda este confirmata telefonic, iar pretul montarii se stabileste in functie de suprafata locuintei si numarul de calorifere amplasate.</p>
+        </div>
+            <img src="/images/Mercedes_Benz_Sprinter_Thermexa_V1.png"  class="photo-galery">
+              <img src="/images/MAN_TGL_Thermexa_V1.png"  class="photo-galery photo-3" >
+          </div>
+
+
+          <h1>Partenerii nostri: </h1>
+          <div class="grid-image">
+            <img src="/images/ferroli-logo.png">
+            <img src="/images/viessmann-logo.png">
+            <img src="/images/vaillant-logo.png">
+            <img src="/images/bosch-logo.png">
+            <img src="/images/ariston-logo.png">
+            <img src="/images/motan-logo.png">
+          </div>
+     
+        </div>
+
+        <footer>
+            <nav class="footer-nav">
+                <h1>Link-uri Importante</h1>
+            <ul class="footer-navbar-list">
+                <li>
+                    <a href="/">Acasa</a>
+                </li>
+                <li>
+
+                    <a href="/about">Despre noi</a>
+                </li>
+                <li>
+                    <a href="/contact">Contacteaza-ne</a>
+                </li>
+                <li>
+                    <a href="/reviews">Review-uri</a>
+                </li>
+                <li>
+                    <a href="/products">Produse</a>
+                </li>
+                
+
+                <li>
+                    <a href="">FAQ</a>
+                </li>
+            </nav>
+                <nav class="footer-nav-inline">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                    <p>Thermexa 2023 Copyright &copy</p>
+                    <h4 class="love-message">Made with &#x2764; by Ciurea Roberto Ionut from CNZG</h4>
+                </nav> 
+                
+                <div class="newsletter">
+                    <img src="images/logo.png" class="logo">
+                    <h1>Aboneza-te la newsletter</h1>
+                    <form action="/" method="POST">
+                    <input type="text" name="email" class="newsletter-input">
+                    <button class="newsletter-btn" type="submit">Submit</button>
+                </form>
+                </div>
+
+        </footer>
+    </div>
+</main>
+</body>
 </html>

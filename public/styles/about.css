@@ -1,0 +1,371 @@
+/*CSS reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/*Custom variables*/
+:root {
+  --bg-600: hsl(35, 22%, 10%);
+  --ac-300: hsl(31, 91%, 53%);
+  --ac-300-hover: hsl(31, 91%, 45%);
+  --ac-100: hsl(0, 3%, 93.5%);
+  --ac--000: hsl(0, 0%, 91%);
+  --white: hsl(0, 0%, 100%);
+  --main-ff: "Exo", sans-serif;
+  --ac-400: hsl(51, 100%, 50%);
+  --ac-200: hsl(0, 0%, 80%);
+}
+
+/*Global styles*/
+.container {
+  width: 100%;
+  min-width: 50%;
+  min-height: 100vh;
+  position: relative;
+}
+main {
+  height: 100%;
+}
+body {
+  overflow: auto;
+}
+
+.header {
+  height: 50rem;
+  width: 100%;
+}
+.blur-over {
+  background-image: url("/images/Sediu_Thermexa_V1.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 10.2rem;
+  width: 100%;
+  height: 40rem;
+}
+/*Hamburger menu*/
+.hamburger-toggle {
+  position: relative;
+  width: 55px;
+  height: 50px;
+  cursor: pointer;
+  top: 1.8rem;
+  display: none;
+}
+.hamburger-toggle span {
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: var(--white);
+  border-radius: 15px;
+}
+.hamburger-toggle span:nth-child(2) {
+  margin-top: 0.75rem;
+}
+.hamburger-toggle span:nth-child(3) {
+  margin-top: 0.75rem;
+}
+
+.header-nav {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  background-color: var(--bg-600);
+  padding: 0.5rem 1.5rem;
+}
+.header-nav .navbar-list {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.header-nav .navbar-list li {
+  list-style: none;
+}
+.header-nav .navbar-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.header-nav .navbar-list a:hover {
+  color: var(--ac-300);
+}
+.header li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  margin-right: 0.7rem;
+}
+
+nav .logo {
+  width: 250px;
+  height: 150px;
+  object-fit: contain;
+}
+
+/*Content*/
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 10%;
+  max-width: 100%;
+  gap: 2rem;
+  position: relative;
+}
+.content p,
+h1 {
+  width: 100%;
+  font-family: var(--main-ff);
+}
+.content .photo-galery {
+  margin: 2rem 1rem;
+  width: 600px;
+  height: 400px;
+  object-fit: contain;
+}
+
+.content .flex {
+  width: 100%;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  flex-wrap: wrap;
+}
+
+.content .flex p {
+  font-size: 1.3rem;
+}
+
+.content .grid-image img {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+}
+.content .grid-image {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 2.5rem;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 3rem;
+  margin: 2rem 1rem;
+}
+
+.content .text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  padding: 1rem 2rem;
+}
+
+.dark-background {
+  padding: 0.5rem 1.5rem;
+  background-color: var(--ac-100);
+}
+
+/*Scroll top button styles*/
+.scroll-button {
+  display: none;
+  position: fixed;
+  left: 95%;
+  cursor: pointer;
+  top: 20%;
+  background-color: var(--ac-300);
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  text-align: center;
+  z-index: 1;
+}
+.scroll-button:hover {
+  background-color: var(--ac-300-hover);
+  transition: ease-in-out 0.5s;
+  color: var(--ac-200);
+}
+
+/*Link styles*/
+.link {
+  color: var(--ac-300);
+}
+.ink:hover {
+  color: var(--ac-300-hover);
+}
+
+/*Footer styles*/
+footer {
+  width: 100%;
+  background-color: var(--bg-600);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  padding: 1rem;
+}
+
+.footer-nav {
+  margin: 1rem 2rem;
+}
+
+.footer-navbar-list li {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.footer-navbar-list li a {
+  color: #fff;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+.footer-navbar-list li a:hover {
+  color: var(--ac-300);
+  transition: ease-in-out 0.3s;
+}
+
+.footer-nav-inline ul {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-nav-inline ul li {
+  list-style: none;
+}
+.footer-nav-inline ul li i {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-right: 2.5rem;
+}
+.footer-nav-inline ul li i:hover {
+  color: var(--ac-300);
+  transition: ease-in-out 0.3s;
+}
+
+.footer-nav-inline p {
+  font-family: var(--main-ff);
+  font-size: 1.2rem;
+  margin-top: 5rem;
+}
+
+footer .love-message {
+  font-size: 0.7rem;
+  margin-top: 2rem;
+}
+
+/*Newsletter styles*/
+
+.newsletter .logo {
+  width: 250px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.newsletter-input {
+  height: 25px;
+  width: 70%;
+  outline: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #000;
+  padding: 0.5rem;
+}
+.newsletter-btn {
+  margin: 0.8rem;
+  border: none;
+  background-color: var(--ac-300);
+  border-radius: 20px;
+  color: var(--white);
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  height: 50px;
+}
+.newsletter-btn:hover {
+  background-color: var(--ac-300-hover);
+  transition: ease-in-out 0.3s;
+}
+
+/*Phone ratio*/
+
+@media (max-width: 67.5rem) {
+  nav .logo {
+    position: relative;
+  }
+
+  .hamburger-toggle {
+    display: block;
+    transition: ease-in-out 1s;
+  }
+
+  .hamburger-toggle.active span:nth-child(2) {
+    opacity: 0;
+    transition: ease-in-out 0.1s;
+  }
+  .hamburger-toggle.active span:nth-child(1) {
+    transform: translateY(17px) rotate(45deg);
+    transition: ease-in-out 0.3s;
+  }
+  .hamburger-toggle.active span:nth-child(3) {
+    transform: translateY(-17px) rotate(-45deg);
+    transition: ease-in-out 0.3s;
+  }
+  .header-nav {
+    height: 10rem;
+  }
+  .header-nav.active {
+    height: 16rem;
+    transition: ease-in-out 0.1s;
+    z-index: 1;
+  }
+  .header-nav .navbar-list {
+    display: none;
+  }
+  .header-nav .navbar-list.active {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    font-size: 0.75rem;
+    left: 50%;
+    flex-direction: column;
+    transition: ease-in-out 0.2s;
+  }
+  /*Content-Phone*/
+  .content .flex {
+    flex-wrap: wrap;
+  }
+  .content .grid-image {
+    grid-template-columns: repeat(1, auto);
+  }
+  .content .photo-galery {
+    width: 450px;
+    height: 300px;
+  }
+  .scroll-button {
+    padding: 0.7rem;
+    left: 93%;
+  }
+  nav .logo {
+    width: 225px;
+    height: 125px;
+  }
+
+  .footer-nav-inline {
+    margin-top: 2rem;
+  }
+}
