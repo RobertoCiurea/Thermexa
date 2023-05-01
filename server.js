@@ -6,6 +6,8 @@ const mongoose = require("mongoose");
 const reviewRouter = require("./routes/reviews");
 const productRouter = require("./routes/productData");
 const contactRouter = require("./routes/questions");
+//get newsletter schema
+const Newsletter = require("./schema/newsletter");
 require("dotenv").config();
 app.use(express.static("public"));
 app.set("view engine", "ejs");
@@ -78,16 +80,39 @@ app.get("/calorifere", (req, res) => {
 app.get("/accesorii", (req, res) => {
   res.render("./product-items/accesorii");
 });
-
+//get all routes into an array
+const routes = [
+  "/",
+  "/about",
+  "/contact",
+  "/reviews",
+  "/products",
+  "/shopping-cart",
+  "/centrale-pe-lemne",
+  "/centrale-pe-peleti",
+  "/centrale-pe-gaz",
+  "/centrale-electrice",
+  "/boilere",
+  "/pompe-de-caldura",
+  "/panouri-solare",
+  "/calorifere",
+  "/accesorii",
+  "/shopping-cart/order",
+];
 //newsletter
-
-const newsletterEmails = [];
-
-app.post("/", (req, res) => {
-  const email = req.body.email;
-  newsletterEmails.push(email);
-  console.log(newsletterEmails);
-  res.redirect("/");
+routes.forEach((route) => {
+  app.post(route, async (req, res) => {
+    try {
+      const email = await new Newsletter({
+        email: req.body.email,
+      });
+      await email.save();
+      res.redirect(route);
+    } catch (err) {
+      console.log(err);
+      res.send(500);
+    }
+  });
 });
 
 app.listen(3000, () => {
