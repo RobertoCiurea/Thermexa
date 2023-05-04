@@ -42,7 +42,7 @@ router.post("/finish-order", async (req, res) => {
     console.log(err);
   }
   items = [];
-  res.render("shopping-cart", { products: items });
+  res.redirect("order-succes");
 });
 
 module.exports = router;

@@ -12,7 +12,7 @@ router.post("/", async (req, res) => {
     });
 
     await question.save();
-    res.redirect("/contact");
+    res.redirect("/question-succes");
   } catch (err) {
     console.log(err);
   }

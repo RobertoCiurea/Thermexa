@@ -48,6 +48,12 @@ app.get("/contact", (req, res) => {
 app.get("/products", (req, res) => {
   res.render("products");
 });
+app.get("/shopping-cart/order-succes", (req, res) => {
+  res.render("order-succes");
+});
+app.get("/question-succes", (req, res) => {
+  res.render("question-succes");
+});
 
 //Products links
 
