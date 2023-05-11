@@ -6,7 +6,6 @@ const mongoose = require("mongoose");
 const reviewRouter = require("./routes/reviews");
 const productRouter = require("./routes/productData");
 const contactRouter = require("./routes/questions");
-const adminRouter = require("./routes/admin");
 //get newsletter schema
 const Newsletter = require("./schema/newsletter");
 require("dotenv").config();
@@ -18,7 +17,6 @@ app.use(bodyParser.json());
 app.use("/reviews", reviewRouter);
 app.use("/shopping-cart", productRouter);
 app.use("/contact", contactRouter);
-app.use("/admin", adminRouter);
 
 //database
 
