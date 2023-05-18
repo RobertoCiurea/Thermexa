@@ -13,11 +13,13 @@ router.post("/", async (req, res) => {
       name: req.body.name,
       rating: req.body.rating,
       comment: req.body.comment,
+      permission: req.body.allowed,
     });
     // console.log(review);
     //saving data in collection
     await review.save();
-    res.redirect("/reviews");
+    res.set("Cache-Control", "no-store");
+    await res.render("review-message");
   } catch (err) {
     console.log(err);
   }
@@ -25,12 +27,14 @@ router.post("/", async (req, res) => {
 //find the review and sending to client side
 router.get("/", async (req, res) => {
   try {
-    const reviewFound = await Review.find();
+    const reviewFound = await Review.find({ permission: { $eq: "allowed" } });
     // console.log(reviewFound);
+
     res.render("reviews", { reviews: reviewFound });
   } catch (err) {
     console.log(err);
   }
+
   // await Review.findOne({ date: 1 }, (err, reviews) => {
   //   if (err) {
   //     console.log(err);

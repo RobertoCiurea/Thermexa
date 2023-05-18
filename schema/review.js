@@ -12,6 +12,10 @@ const reviewSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  permission: {
+    type: String,
+    required: false,
+  },
   date: {
     type: Date,
     default: Date.now,
