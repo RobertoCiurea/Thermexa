@@ -140,6 +140,7 @@ nav .logo {
   margin: 0 15%;
   max-width: 100%;
 }
+
 .content p,
 h1 {
   font-family: var(--main-ff);
@@ -157,6 +158,28 @@ h1 {
   background-color: var(--ac-300-hover);
   transition: ease-in-out 0.5s;
 }
+.content .notification {
+  position: sticky;
+  background-color: var(--ac-300);
+  display: flex;
+  color: #fff;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  width: 9rem;
+  opacity: 0;
+  border-radius: 20px;
+  position: absolute;
+  left: 70%;
+  top: 16.5%;
+  z-index: 1;
+}
+
+.content .notification.active {
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+}
+
 /*Grid*/
 .content-grid {
   display: grid;
