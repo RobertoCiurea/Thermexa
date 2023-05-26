@@ -26,9 +26,6 @@ totalPricesElements.textContent = totalPrice;
 const totalProducts = productElements.length;
 totalProductsElements.textContent = totalProducts;
 
-//toggle button by total
-const button = document.getElementById("button");
-
 //send total to node server
 const getInput = document.getElementById("input");
 getInput.value = totalPrice;
