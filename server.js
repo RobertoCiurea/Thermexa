@@ -54,6 +54,9 @@ app.get("/shopping-cart/order-succes", (req, res) => {
 app.get("/question-succes", (req, res) => {
   res.render("question-succes");
 });
+app.get("/faq", (req, res) => {
+  res.render("faq");
+});
 
 //Products links
 
@@ -93,6 +96,7 @@ const routes = [
   "/contact",
   "/reviews",
   "/products",
+  "/faq",
   "/shopping-cart",
   "/centrale-pe-lemne",
   "/centrale-pe-peleti",
