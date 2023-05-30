@@ -20,6 +20,8 @@
     <script src="./scripts/rating.js" defer></script>
     <title>Thermexa | About Page</title>
     <link rel="website icon" type="png" href="images//small-logo.png">
+        <!--AOS aniamtion-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <main>
@@ -71,13 +73,13 @@
           <h1 class="main-title">Despre noi</h1>
           <div class="flex">
             <div class="text-box">
-              <p>Thermexa este o companie moderna si nou aparuta pe piata care se ocupa atata de furnizare, cat si de montarea de sisteme de incalzire si surse de energie clasice, dar si innovative.</p>
+              <p data-aos="fade-left">Thermexa este o companie moderna si nou aparuta pe piata care se ocupa atata de furnizare, cat si de montarea de sisteme de incalzire si surse de energie clasice, dar si innovative.</p>
             </div>
           </div>
 
        
 
-          <div class="flex">
+          <div class="flex"  data-aos="fade-right" data-aos-duration="800">
             <div class="text-box">
                 <h1>Ce va punem la dispozitie?</h1>
               <p>Compania dispune de o gama larga si variata de <a class="link" href="/products">produse</a> care iti stau la dispozitia nevoilor locuintei tale. Fiecare produs comandat este livrat cu atentie pana la usa clientului si chiar montat de catre o echipa de specialisti (daca se opteaza pentru montare).</p>
@@ -88,7 +90,7 @@
           </div>
 
 
-          <div class="flex">
+          <div class="flex" data-aos="fade-up" data-aos-duration="400">
             <div class="text-box">
                 <h1>Cum procedam cu comenzile?</h1>
             <p>Comenzile plasate sunt procesate imediat, iar livrarea se realizeaza la cateva zile de la procesarea comenzii multumita curierilor nostri si echipei noastre de logistica.</p>
@@ -100,13 +102,13 @@
 
 
           <h1>Partenerii nostri: </h1>
-          <div class="grid-image">
-            <img src="/images/ferroli-logo.png">
-            <img src="/images/viessmann-logo.png">
-            <img src="/images/vaillant-logo.png">
-            <img src="/images/bosch-logo.png">
-            <img src="/images/ariston-logo.png">
-            <img src="/images/motan-logo.png">
+          <div class="grid-image" >
+            <img data-aos= "zoom-in" data-aos-duration="200" src="/images/ferroli-logo.png">
+            <img data-aos= "zoom-in" data-aos-duration="300"  src="/images/viessmann-logo.png">
+            <img data-aos= "zoom-in" data-aos-duration="400"  src="/images/vaillant-logo.png">
+            <img data-aos= "zoom-in" data-aos-duration="500"  src="/images/bosch-logo.png">
+            <img data-aos= "zoom-in" data-aos-duration="600"  src="/images/ariston-logo.png">
+            <img data-aos= "zoom-in" data-aos-duration="700"  src="/images/motan-logo.png">
           </div>
      
         </div>
@@ -140,16 +142,16 @@
                 <nav class="footer-nav-inline">
                     <ul>
                         <li>
-                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i data-aos="zoom-in-up" data-aos-duration="200" class="fa-brands fa-facebook-f"></i></a>
                         </li>
                         <li>
-                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i data-aos="zoom-in-up" data-aos-duration="300" class="fa-brands fa-twitter"></i></a>
                         </li>
                         <li>
-                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i data-aos="zoom-in-up" data-aos-duration="400" class="fa-brands fa-instagram"></i></a>
                         </li>
                         <li>
-                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            <a href=""><i data-aos="zoom-in-up" data-aos-duration="500" class="fa-brands fa-youtube"></i></a>
                         </li>
                     </ul>
                     <p>Thermexa 2023 Copyright &copy</p>
@@ -168,5 +170,10 @@
         </footer>
     </div>
 </main>
+<!--AOS animation-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

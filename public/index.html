@@ -20,6 +20,9 @@
     <script src="./scripts/scrollTopButton.js" defer></script>
     <title>Thermexa | Home Page</title>
     <link rel="website icon" type="png" href="images//small-logo.png">
+
+    <!--AOS aniamtion-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <main>
@@ -63,9 +66,9 @@
 
             </div>
             <ul class="keywords-list">
-                <li><p>Eficienta</p></li>
-                <li><p>Confort</p></li>
-                <li><p>Siguranta</p></li>
+                <li><p data-aos="fade-right" data-aos-duration="400">Eficienta</p></li>
+                <li><p data-aos="fade-right" data-aos-duration="600">Confort</p></li>
+                <li><p data-aos="fade-right" data-aos-duration="800">Siguranta</p></li>
 
             </ul>
         </header>
@@ -80,21 +83,21 @@
                     <p>Sisteme moderne si eficiente de alimentare a locuintelor cu energie sustenabila si regenerabila.</p>
                 </div>
             </div>
-            <div class="flex dark-background">
+            <div class="flex dark-background"  data-aos="fade-left" data-aos-duration="800" >
                 <div class="text-box">
                     <h1>Eficienta, putere si confort la dimensiuni reduse</h1>
                     <p>Sisteme de incalzire eficiente, clasice, compacte, cu putere de pana la 45 Kw.</p>
                 </div>
                 <img src="./images/photo-5.jpeg" class="photo-galery photo-2">
             </div>
-            <div class="flex">
+            <div class="flex"  data-aos="fade-right" data-aos-duration="900">
                 <img src="./images/photo-2.jpeg" class="photo-galery photo-3">
                 <div class="text-box">
                     <h1>Garantie extensibila la fiecare dintre produsele noastre</h1>
                     <p>Fiecare produs cumparat de la noi beneficiaza de o garantie de minim 5 ani care poate fi extinsa pana la chiar 7 ani.</p>
                 </div>
             </div>
-            <div class="flex dark-background">
+            <div class="flex dark-background"  data-aos="fade-left" data-aos-duration="1000">
                 <div class="text-box">
                     <h1>Bucuria de a alege fix ceea ce iti doresti</h1>
                     <p>Profita de o gama larga de produse si accesori si alege un produs care este pe baza asteptarilor tale din stocurile noastre.</p>
@@ -103,13 +106,13 @@
             </div>
 
             <div class="card">
-                <h1>De ce sa alegi Thermexa?</h1>
-                <ul>
-                    <li><p>Posibilitatea unei game mai variate de produse.</p></li>
-                    <li><p>Garantie extensibila pentru fiecare produs.</p></li>
-                    <li><p>Montajul, dar si intretinerea este realizata de profesionisti.</p></li>
-                    <li><p>Preturile sunt mai reduse decat ale competitiei, fara a compromite siguranta consumatorului sau a scadea calitatea produsului.</p></li>
-                    <li><p>Posibilitatea unei garantii extinse este prezenta in optiunile Thermexa.</p></li>
+                <h1  data-aos="zoom-in">De ce sa alegi Thermexa?</h1>
+                <ul >
+                    <li><p  data-aos="fade-left" data-aos-duration="500">Posibilitatea unei game mai variate de produse.</p></li>
+                    <li><p  data-aos="fade-left" data-aos-duration="600">Garantie extensibila pentru fiecare produs.</p></li>
+                    <li><p  data-aos="fade-left" data-aos-duration="700">Montajul, dar si intretinerea este realizata de profesionisti.</p></li>
+                    <li><p  data-aos="fade-left" data-aos-duration="800">Preturile sunt mai reduse decat ale competitiei, fara a compromite siguranta consumatorului sau a scadea calitatea produsului.</p></li>
+                    <li><p  data-aos="fade-left" data-aos-duration="900">Posibilitatea unei garantii extinse este prezenta in optiunile Thermexa.</p></li>
             
                 </ul>
 
@@ -134,7 +137,7 @@
                  <label for="comment">Mesaj:</label>
                     <textarea name="comment" required class="comment-field"></textarea>
               <br>
-              <button type="submit" class="button">Submit</button>
+              <button type="submit" class="button" data-aos="zoom-in">Submit</button>
             </form>
         </section>
         </div>
@@ -167,16 +170,16 @@
                 <nav class="footer-nav-inline">
                     <ul>
                         <li>
-                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i data-aos="zoom-in-up" data-aos-duration="200" class="fa-brands fa-facebook-f"></i></a>
                         </li>
                         <li>
-                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i data-aos="zoom-in-up" data-aos-duration="300" class="fa-brands fa-twitter"></i></a>
                         </li>
                         <li>
-                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i data-aos="zoom-in-up" data-aos-duration="400" class="fa-brands fa-instagram"></i></a>
                         </li>
                         <li>
-                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            <a href=""><i data-aos="zoom-in-up" data-aos-duration="500" class="fa-brands fa-youtube"></i></a>
                         </li>
                     </ul>
                     <p>Thermexa 2023 Copyright &copy</p>
@@ -195,5 +198,10 @@
         </footer>
     </div>
 </main>
+<!--AOS animation-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
