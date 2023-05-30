@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "alert": "^5.1.4",
+    "aos": "^2.3.4",
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.2",
     "ejs": "^3.1.8",
